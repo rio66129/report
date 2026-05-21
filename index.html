@@ -6,36 +6,38 @@
     <title>SilverTech | 科技溫度，守護歲月</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        :root { --primary-color: #4A90E2; }
+        :root { --primary-color: #2563eb; }
         body { font-family: 'PingFang TC', 'Microsoft JhengHei', sans-serif; background-color: #f8fafc; }
         .breadcrumb a:hover { color: var(--primary-color); text-decoration: underline; }
         .tool-card { transition: transform 0.3s; }
         .tool-card:hover { transform: translateY(-5px); }
-        /* 用於控制分頁顯示隱藏 */
+        /* 分頁顯示隱藏控制 */
         .page-content { display: none; }
         .page-content.active { display: block; }
     </style>
 </head>
-<body class="flex flex-col min-h-screen">
+<body class="flex flex-col min-h-screen text-slate-700">
 
-    <nav class="bg-white shadow-md sticky top-0 z-50">
+    <nav class="bg-white shadow-sm sticky top-0 z-50 border-b border-slate-100">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <a href="#home" onclick="navigateTo('home')" class="flex items-center space-x-3 group">
                 <img src="logo.png" alt="SilverTech Logo" class="h-12 w-auto object-contain rounded-full shadow-sm group-hover:opacity-90 transition-opacity">
-                <span class="text-2xl font-bold text-gray-800 tracking-tight group-hover:text-blue-600 transition-colors">SilverTech</span>
+                <span class="text-2xl font-bold text-slate-800 tracking-tight group-hover:text-blue-600 transition-colors">SilverTech</span>
             </a>
-            <div class="hidden md:flex space-x-8 font-medium text-gray-600">
+            <div class="hidden md:flex space-x-6 font-medium text-slate-600">
                 <a href="#home" onclick="navigateTo('home')" class="nav-link hover:text-blue-600 transition-colors">首頁</a>
                 <a href="#topics" onclick="navigateTo('topics')" class="nav-link hover:text-blue-600 transition-colors">核心議題</a>
+                <a href="#sciencefair" onclick="navigateTo('sciencefair')" class="nav-link hover:text-blue-600 transition-colors">科展與素養</a>
                 <a href="#resources" onclick="navigateTo('resources')" class="nav-link hover:text-blue-600 transition-colors">文獻資源</a>
                 <a href="#faq" onclick="navigateTo('faq')" class="nav-link hover:text-blue-600 transition-colors">FAQ(常見問題)</a>
                 <a href="#about" onclick="navigateTo('about')" class="nav-link hover:text-blue-600 transition-colors">關於團隊</a>
+                <a href="#sitemap" onclick="navigateTo('sitemap')" class="nav-link hover:text-blue-600 transition-colors">網站地圖</a>
             </div>
         </div>
     </nav>
 
-    <div class="bg-gray-100 border-b border-gray-200">
-        <div class="container mx-auto px-6 py-3 text-sm text-gray-500 breadcrumb" id="breadcrumb-container">
+    <div class="bg-slate-100 border-b border-slate-200">
+        <div class="container mx-auto px-6 py-3 text-sm text-slate-500 breadcrumb" id="breadcrumb-container">
         </div>
     </div>
 
@@ -44,8 +46,8 @@
         <div id="page-home" class="page-content active">            
             <header class="bg-gradient-to-r from-blue-50 to-indigo-100 py-24 px-6 text-center">
                 <div class="container mx-auto">
-                    <h1 class="text-5xl font-extrabold text-gray-900 mb-4 tracking-tight">科技溫度，守護歲月</h1>
-                    <p class="text-xl text-gray-600 mb-8 max-w-2xl mx-auto">專為「高中生」打造的科展與小論文資訊平台，帶領你用科技實踐溫暖的社會關懷。</p>
+                    <h1 class="text-5xl font-extrabold text-indigo-950 mb-4 tracking-tight">科技溫度，守護歲月</h1>
+                    <p class="text-xl text-slate-600 mb-8 max-w-2xl mx-auto">專為「高中生」打造的科展與小論文資訊平台，帶領你用科技實踐溫暖的社會關懷。</p>
                     
                     <div class="flex justify-center gap-3 flex-wrap">
                         <span class="bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-sm font-medium shadow-sm">#高齡化社會</span>
@@ -57,29 +59,29 @@
             </header>
 
             <section class="py-16 container mx-auto px-6 max-w-4xl text-center">
-                <h2 class="text-3xl font-bold mb-6 text-gray-800">歡迎來到 SilverTech</h2>
-                <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                <h2 class="text-3xl font-bold mb-6 text-slate-800">歡迎來到 SilverTech</h2>
+                <p class="text-slate-600 text-lg leading-relaxed mb-8">
                     我們致力於縮短高中生與學術研究的距離。在這裡，你可以探索高齡化社會的核心痛點、尋找科學展覽與小論文的靈感，並獲得最紮實的文獻索引與工具支持。
                 </p>
                 <div class="grid md:grid-cols-2 gap-6 text-left mb-16">
-                    <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
                         <h4 class="font-bold text-lg text-blue-600 mb-2">💡 靈感發想</h4>
-                        <p class="text-gray-600 text-sm">從生活中的長者痛點出發，結合 AI 與物聯網技術，將同理心轉化為科展研究主題。</p>
+                        <p class="text-slate-600 text-sm">從生活中的長者痛點出發，結合 AI 與物聯網技術，將同理心轉化為科展研究主題。</p>
                     </div>
-                    <div class="p-6 bg-white rounded-xl shadow-sm border border-gray-100">
+                    <div class="p-6 bg-white rounded-xl shadow-sm border border-slate-100">
                         <h4 class="font-bold text-lg text-blue-600 mb-2">📚 學術嚴謹</h4>
-                        <p class="text-gray-600 text-sm">提供國內外高齡科技、老人學核心期刊指引，建立具有公信力的小論文文獻探討。</p>
+                        <p class="text-slate-600 text-sm">提供國內外高齡科技、老人學核心期刊指引，建立具有公信力的小論文文獻探討。</p>
                     </div>
                 </div>
 
-                <div class="border-t border-gray-200 pt-16 text-left">
+                <div class="border-t border-slate-200 pt-16 text-left">
                     <div class="mb-6">
-                        <h3 class="text-2xl font-bold text-gray-800">🛠️ 科展研究動態插件</h3>
-                        <p class="text-gray-500 text-sm mt-1">即時掌握備賽進度與視覺化建議</p>
+                        <h3 class="text-2xl font-bold text-slate-800">🛠️ 科展研究動態插件</h3>
+                        <p class="text-slate-500 text-sm mt-1">即時掌握備賽進度與視覺化建議</p>
                     </div>
                     
                     <div class="grid md:grid-cols-3 gap-8">
-                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-900 text-white p-6 rounded-xl shadow-lg">
+                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-950 text-white p-6 rounded-xl shadow-md">
                             <h3 class="text-xl font-bold mb-2 flex items-center gap-2">⌛ 截稿倒數器</h3>
                             <p class="text-xs text-blue-200 mb-4">距離 2026 全國科展截稿還有：</p>
                             <div class="text-2xl font-mono font-bold text-yellow-400 mb-2 min-h-[40px] flex items-center" id="countdown-display">
@@ -88,122 +90,52 @@
                             <span class="text-xs bg-white/20 px-2 py-1 rounded">請妥善規劃實驗進度</span>
                         </div>
 
-                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-900 text-white p-6 rounded-xl shadow-lg">
+                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-950 text-white p-6 rounded-xl shadow-md">
                             <h3 class="text-xl font-bold mb-2 flex items-center gap-2">🎨 海報配色建議</h3>
                             <p class="text-xs text-blue-200 mb-4">適合「醫療關懷」主題的專業配色：</p>
                             <div class="flex space-x-3 mb-4">
                                 <div class="w-10 h-10 bg-blue-600 rounded-lg shadow-sm border border-white/20" title="主色：科技藍"></div>
                                 <div class="w-10 h-10 bg-emerald-500 rounded-lg shadow-sm border border-white/20" title="輔助色：健康綠"></div>
-                                <div class="w-10 h-10 bg-gray-100 rounded-lg shadow-sm border border-white/20" title="背景色：舒適灰白"></div>
+                                <div class="w-10 h-10 bg-slate-100 rounded-lg shadow-sm border border-white/20" title="背景色：舒適灰白"></div>
                             </div>
                             <span class="text-xs text-yellow-300">建議：主色佔 60%，輔助色佔 30%</span>
                         </div>
 
-                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-900 text-white p-6 rounded-xl shadow-lg">
+                        <div class="tool-card bg-gradient-to-br from-blue-900 to-indigo-950 text-white p-6 rounded-xl shadow-md">
                             <h3 class="text-xl font-bold mb-2 flex items-center gap-2">📅 館員諮詢預約</h3>
                             <p class="text-xs text-blue-200 mb-4">本月可諮詢文獻檢索時段：</p>
                             <p class="text-sm font-semibold text-yellow-400 mb-4">每週二、四 14:00-16:00</p>
-                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-blue-900 px-4 py-2 rounded-lg font-bold text-sm transition-colors shadow-md">立即預約線上諮詢</button>
+                            <button class="w-full bg-yellow-500 hover:bg-yellow-600 text-indigo-950 px-4 py-2 rounded-lg font-bold text-sm transition-colors shadow-sm">立即預約線上諮詢</button>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="py-16 bg-white border-t border-gray-200">
+            <section class="py-16 bg-white border-t border-slate-200">
                 <div class="container mx-auto px-6 max-w-5xl">
-                    <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-gray-800">
-                        網站使用說明與平台介紹
-                    </h2>
-                    <p class="text-gray-600 leading-relaxed mb-10">
+                    <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-slate-800">網站使用說明與平台介紹</h2>
+                    <p class="text-slate-600 leading-relaxed mb-10">
                         SilverTech 是一個以「高齡科技」為核心主題的學術資訊平台，專門提供高中生進行科學展覽、小論文研究與專題探究時所需的靈感、文獻與研究工具。
                     </p>
 
                     <div class="grid md:grid-cols-2 gap-8">
-                        <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8 shadow-sm">
+                        <div class="bg-blue-50/50 border border-blue-100 rounded-2xl p-8 shadow-sm">
                             <h3 class="text-xl font-bold text-blue-700 mb-4">📘 如何使用本網站</h3>
-                            <ul class="space-y-4 text-sm text-gray-700 leading-relaxed">
-                                <li>
-                                    <span class="font-bold text-blue-600">1. 首頁導覽</span><br>
-                                    了解高齡科技的重要性與研究背景。
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-600">2. 核心議題探索</span><br>
-                                    深入認識智慧醫療、長照機器人與健康大數據。
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-600">3. 文獻資源查詢</span><br>
-                                    查閱適合高中生引用的學術資料與期刊。
-                                </li>
-                                <li>
-                                    <span class="font-bold text-blue-600">4. 創意工具應用</span><br>
-                                    善用倒數器與研究工具規劃專題進度。
-                                </li>
+                            <ul class="space-y-4 text-sm text-slate-700 leading-relaxed">
+                                <li><span class="font-bold text-blue-600">1. 首頁導覽</span><br>了解高齡科技的重要性與研究背景。</li>
+                                <li><span class="font-bold text-blue-600">2. 核心議題探索</span><br>深入認識智慧醫療、長照機器人與健康大數據。</li>
+                                <li><span class="font-bold text-blue-600">3. 文獻資源查詢</span><br>查閱適合高中生引用的學術資料與期刊。</li>
+                                <li><span class="font-bold text-blue-600">4. 創意工具應用</span><br>善用倒數器與研究工具規劃專題進度。</li>
                             </ul>
                         </div>
 
-                        <div class="bg-gray-50 border border-gray-200 rounded-2xl p-8 shadow-sm">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">🌟 平台特色</h3>
-                            <div class="space-y-5 text-sm text-gray-700 leading-relaxed">
-                                <div>
-                                    <span class="font-bold text-blue-600">✔ 學術權威性</span><br>
-                                    整合 Nature、PubMed、ScienceDirect 與華藝等學術平台。
-                                </div>
-                                <div>
-                                    <span class="font-bold text-blue-600">✔ 高中生友善</span><br>
-                                    以淺顯方式介紹科技與醫療議題。
-                                </div>
-                                <div>
-                                    <span class="font-bold text-blue-600">✔ 跨領域整合</span><br>
-                                    結合 AI、醫療、資訊與社會議題。
-                                </div>
-                                <div>
-                                    <span class="font-bold text-blue-600">✔ 適合科展研究</span><br>
-                                    可直接作為小論文與科展資料來源。
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="py-16 bg-gradient-to-r from-blue-50 to-indigo-50 border-t border-gray-200">
-                <div class="container mx-auto px-6 max-w-6xl">
-                    <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-gray-800">🎯 目標使用者族群</h2>
-                    <p class="text-gray-600 leading-relaxed mb-12 max-w-4xl">
-                        SilverTech 以「高中生高齡科技教育」為核心定位，專為需要進行科學展覽、小論文與專題研究的學生設計。
-                    </p>
-
-                    <div class="grid md:grid-cols-3 gap-8">
-                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
-                            <div class="text-4xl mb-4">🎓</div>
-                            <h3 class="text-xl font-bold text-blue-600 mb-4">高中職學生</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-5">適合進行科展、小論文、自主學習與學習歷程製作。</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 科展主題發想</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 文獻探討</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ AI 與智慧醫療研究</div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
-                            <div class="text-4xl mb-4">👩‍🏫</div>
-                            <h3 class="text-xl font-bold text-blue-600 mb-4">指導教師</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-5">協助教師規劃課程、專題方向與科展研究架構。</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 課程設計</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 研究規劃</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 文獻教學</div>
-                            </div>
-                        </div>
-
-                        <div class="bg-white rounded-2xl p-8 shadow-sm border border-blue-100 hover:shadow-md transition-shadow">
-                            <div class="text-4xl mb-4">📚</div>
-                            <h3 class="text-xl font-bold text-blue-600 mb-4">圖書館研究學習者</h3>
-                            <p class="text-gray-600 text-sm leading-relaxed mb-5">提供高齡科技與智慧醫療相關研究資源。</p>
-                            <div class="space-y-2 text-sm">
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 資料庫查詢</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 學術期刊閱讀</div>
-                                <div class="bg-blue-50 text-blue-700 px-3 py-2 rounded-lg">✔ 高齡科技趨勢</div>
+                        <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 shadow-sm">
+                            <h3 class="text-xl font-bold text-indigo-950 mb-4">🌟 平台特色</h3>
+                            <div class="space-y-5 text-sm text-slate-700 leading-relaxed">
+                                <div><span class="font-bold text-blue-600">✔ 學術權威性</span><br>整合 Nature、PubMed、ScienceDirect 與華藝等學術平台。</div>
+                                <div><span class="font-bold text-blue-600">✔ 高中生友善</span><br>以淺顯方式介紹科技與醫療議題。</div>
+                                <div><span class="font-bold text-blue-600">✔ 跨領域整合</span><br>結合 AI、醫療、資訊與社會議題。</div>
+                                <div><span class="font-bold text-blue-600">✔ 適合科展研究</span><br>可直接作為小論文與科展資料來源。</div>
                             </div>
                         </div>
                     </div>
@@ -213,153 +145,197 @@
 
         <div id="page-topics" class="page-content">
             <section class="py-16 container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-gray-800">核心議題闡述</h2>
-                <p class="text-gray-600 mb-10 max-w-3xl">針對當前高齡科技最受關注的三大方向進行深度解析，並結合國內外核心期刊（已附連結），適合以此為出發點進行專題研究或科展發想。</p>
+                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-slate-800">核心議題闡述</h2>
+                <p class="text-slate-600 mb-10 max-w-3xl">針對當前高齡科技最受關注的三大方向進行深度解析，並結合國內外核心期刊（已附連結），適合以此為出發點進行專題研究或科展發想。</p>
                 
                 <div class="grid md:grid-cols-3 gap-8 mb-16">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
                         <div>
                             <div class="text-3xl mb-4">🤖</div>
                             <h3 class="text-xl font-bold mb-4 text-blue-600">長照機器人的發展</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm mb-6">協助照顧長者的機器設備，目標在於有效減輕照護的人力壓力，解決高齡社會勞動力不足的問題。並探討實體與數位環境對老化的影響。</p>
+                            <p class="text-slate-600 leading-relaxed text-sm mb-6">協助照顧長者的機器設備，目標在於有效減輕照護的人力壓力，解決高齡社會勞動力不足的問題。並探討實體與數位環境對老化的影響。</p>
                         </div>
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-bold text-gray-400 block mb-2">📋 參考資源：</span>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="text-xs font-bold text-slate-400 block mb-2">📋 參考資源：</span>
                             <ul class="text-xs space-y-2 text-blue-500">
-                                <li>
-                                    <a href="https://link.springer.com/article/10.1186/s12912-023-01230-y" target="_blank" class="hover:underline">• BMC Nursing — Assistive robotic systems in nursing care</a>
+                                <li><a href="https://link.springer.com/article/10.1186/s12912-023-01230-y" target="_blank" class="hover:underline">• BMC Nursing — Assistive robotic systems in nursing care</a></li>
+                                <li><a href="https://www.sciencedirect.com/science/article/pii/S2352648316300149" target="_blank" class="hover:underline">• ScienceDirect — Robotic Technology for Older People</a></li>
+                                <li><a href="https://www.airitilibrary.com/Article/Detail/15612546-N202301110001-00002" target="_blank" class="hover:underline">• 華藝線上圖書館 — AI智能服務型機器人在醫療及長照的應用</a></li>
+                                <li class="pt-2 border-t border-dashed border-slate-200">
+                                    <a href="https://www.gerontechnology.org" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：Gerontechnology</a>
+                                    <span class="text-slate-400 block pl-3">高齡科技唯一專屬國際期刊，學跨學科研究起點。</span>
                                 </li>
                                 <li>
-                                    <a href="https://www.sciencedirect.com/science/article/pii/S2352648316300149" target="_blank" class="hover:underline">• ScienceDirect — Robotic Technology for Older People</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.airitilibrary.com/Article/Detail/15612546-N202301110001-00002" target="_blank" class="hover:underline">• 華藝線上圖書館 — AI智能服務型機器人在醫療及長照的應用</a>
-                                </li>
-                                <li class="pt-2 border-t border-dashed border-gray-200">
-                                    <a href="https://www.gerontechnology.org" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：Gerontechnology</a>
-                                    <span class="text-gray-400 block pl-3">高齡科技唯一專屬國際期刊，學跨學科研究起點。</span>
-                                </li>
-                                <li>
-                                    <a href="https://www.tandfonline.com" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：Journal of Aging and Environment</a>
-                                    <span class="text-gray-400 block pl-3">探討實體與數位環境對老化的深遠影響。</span>
+                                    <a href="https://www.tandfonline.com" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：Journal of Aging and Environment</a>
+                                    <span class="text-slate-400 block pl-3">探討實體與數位環境對老化的深遠影響。</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
                         <div>
                             <div class="text-3xl mb-4">🏥</div>
                             <h3 class="text-xl font-bold mb-4 text-blue-600">智慧醫療與遠距照護</h3>
                             <p class="text-gray-600 leading-relaxed text-sm mb-6">結合資訊科技提升醫療品質，讓長者不必頻繁奔波醫院，透過遠距技術也能在家接受專業醫療服務。並探討跌倒偵測與居家感控等實作技術。</p>
                         </div>
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-bold text-gray-400 block mb-2">📋 參考資源：</span>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="text-xs font-bold text-slate-400 block mb-2">📋 參考資源：</span>
                             <ul class="text-xs space-y-2 text-blue-500">
-                                <li>
-                                    <a href="https://www.jmir.org/" target="_blank" class="hover:underline">• JMIR Journal — Journal of Medical Internet Research</a>
-                                </li>
-                                <li>
-                                    <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="hover:underline">• PubMed — Telemedicine & Smart Healthcare Research</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.airitilibrary.com/" target="_blank" class="hover:underline">• 華藝線上圖書館 — 智慧醫療與遠距健康照護相關研究</a>
-                                </li>
-                                <li class="pt-2 border-t border-dashed border-gray-200">
-                                    <a href="https://www.airitilibrary.com/Publication/alPublicationJournal?PublicationID=1022067x" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：資訊管理學報 (TSSCI)</a>
-                                </li>
-                                <li>
-                                    <a href="https://aging.jmir.org" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：JMIR Aging</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.mdpi.com/journal/sensors" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：Sensors (MDPI 跌倒偵測專欄)</a>
-                                </li>
+                                <li><a href="https://www.jmir.org/" target="_blank" class="hover:underline">• JMIR Journal — Journal of Medical Internet Research</a></li>
+                                <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="hover:underline">• PubMed — Telemedicine & Smart Healthcare Research</a></li>
+                                <li><a href="https://www.airitilibrary.com/" target="_blank" class="hover:underline">• 華藝線上圖書館 — 智慧醫療與遠距健康照護相關研究</a></li>
+                                <li class="pt-2 border-t border-dashed border-slate-200"><a href="https://www.airitilibrary.com/Publication/alPublicationJournal?PublicationID=1022067x" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：資訊管理學報 (TSSCI)</a></li>
+                                <li><a href="https://aging.jmir.org" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：JMIR Aging</a></li>
+                                <li><a href="https://www.mdpi.com/journal/sensors" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：Sensors (MDPI 跌倒偵測專欄)</a></li>
                             </ul>
                         </div>
                     </div>
                     
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 flex flex-col justify-between">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 flex flex-col justify-between">
                         <div>
                             <div class="text-3xl mb-4">📊</div>
                             <h3 class="text-xl font-bold mb-4 text-blue-600">健康大數據與個人化醫療</h3>
-                            <p class="text-gray-600 leading-relaxed text-sm mb-6">蒐集並分析大量醫療資料，為長者提供精準、客製化的健康建議與醫療方案。引進生醫資訊技術，評估科技對傳統照護模式帶來的變革。</p>
+                            <p class="text-slate-600 leading-relaxed text-sm mb-6">蒐集並分析大量醫療資料，為長者提供精準、客製化的健康建議與醫療方案。引進生醫資訊技術，評估科技對傳統照護模式帶來的變革。</p>
                         </div>
-                        <div class="mt-4 pt-4 border-t border-gray-100">
-                            <span class="text-xs font-bold text-gray-400 block mb-2">📋 參考資源：</span>
+                        <div class="mt-4 pt-4 border-t border-slate-100">
+                            <span class="text-xs font-bold text-slate-400 block mb-2">📋 參考資源：</span>
                             <ul class="text-xs space-y-2 text-blue-500">
-                                <li>
-                                    <a href="https://www.nature.com/articles/s41746-018-0058-9" target="_blank" class="hover:underline">• Nature npj Digital Medicine — AI & Personalized Health</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.sciencedirect.com/science/article/pii/S1532046420302665" target="_blank" class="hover:underline">• Journal of Biomedical Informatics — Personalized Decision Support</a>
-                                </li>
-                                <li>
-                                    <a href="https://www.airitilibrary.com/" target="_blank" class="hover:underline">• 華藝線上圖書館 — 健康大數據與精準醫療相關研究</a>
-                                </li>
-                                <li class="pt-2 border-t border-dashed border-gray-200">
-                                    <a href="https://www.fma.org.tw/fweb/fma_mgz_m.jsp" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：台灣醫學 (TMJ 本土長照數據)</a>
-                                </li>
-                                <li>
-                                    <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：IEEE J-BHI (生醫資訊學)</a>
-                                </li>
-                                <li>
-                                    <a href="https://academic.oup.com/gerontologist" target="_blank" class="text-gray-500 hover:underline block font-semibold">⊙ 領域指引延伸：The Gerontologist</a>
-                                </li>
+                                <li><a href="https://www.nature.com/articles/s41746-018-0058-9" target="_blank" class="hover:underline">• Nature npj Digital Medicine — AI & Personalized Health</a></li>
+                                <li><a href="https://www.sciencedirect.com/science/article/pii/S1532046420302665" target="_blank" class="hover:underline">• Journal of Biomedical Informatics — Personalized Decision Support</a></li>
+                                <li><a href="https://www.airitilibrary.com/" target="_blank" class="hover:underline">• 華藝線上圖書館 — 健康大數據與精準醫療相關研究</a></li>
+                                <li class="pt-2 border-t border-dashed border-slate-200"><a href="https://www.fma.org.tw/fweb/fma_mgz_m.jsp" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：台灣醫學 (TMJ 本土長照數據)</a></li>
+                                <li><a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：IEEE J-BHI (生醫資訊學)</a></li>
+                                <li><a href="https://academic.oup.com/gerontologist" target="_blank" class="text-slate-500 hover:underline block font-semibold">⊙ 領域指引延伸：The Gerontologist</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <div class="border-t border-gray-200 pt-12">
-                    <h3 class="text-2xl font-bold mb-6 text-gray-800">💡 關鍵詞彙索引典 (Thesaurus)</h3>
+                <div class="border-t border-slate-200 pt-12">
+                    <h3 class="text-2xl font-bold mb-6 text-slate-800">💡 關鍵詞彙索引典 (Thesaurus)</h3>
                     <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">智慧照顧 / 智慧照護</span>
-                            <span class="text-xs text-gray-500 block mt-1">Smart Care</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】運用物聯網、大數據等技術於高齡者的日常生活與醫療看護。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <span class="text-xs text-slate-500 block mt-1">Smart Care</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】運用物聯網、大數據等技術於高齡者的日常生活與醫療看護。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">遠距醫療 / 遠距照護</span>
-                            <span class="text-xs text-gray-500 block mt-1">Telemedicine / Telecare</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】透過通訊科技為行動不便或偏遠地區長者提供醫療諮詢與生理數據監測。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <span class="text-xs text-slate-500 block mt-1">Telemedicine / Telecare</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】透過通訊科技為行動不便或偏遠地區長者提供醫療諮詢與生理數據監測。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">輔助科技 / 高齡輔具</span>
-                            <span class="text-xs text-gray-500 block mt-1">Assistive Technology</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】用以提升、維持或改善高齡者身體功能的設備或系統（如智慧輪椅、穿戴式防摔裝置）。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <span class="text-xs text-slate-500 block mt-1">Assistive Technology</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】用以提升、維持或改善高齡者身體功能的設備或系統（如智慧輪椅、穿戴式防摔裝置）。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">數位韌性</span>
                             <span class="text-xs text-gray-500 block mt-1">Digital Resilience</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】強化高齡社會中數位基礎建設與長者面對數位環境的適應與防護能力。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】強化高齡社會中數位基礎建設與長者面對數位環境的適應與防護能力。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">數位學習平台</span>
                             <span class="text-xs text-gray-500 block mt-1">Digital Learning Platforms</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】推動高齡者終身學習、營造在地老化與活躍老化的線上科技支持。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】推動高齡者終身學習、營造在地老化與活躍老化的線上科技支持。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">高齡創新整合</span>
-                            <span class="text-xs text-gray-500 block mt-1">Geriatric Innovative Integration</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】將創新科技、在地資源與老年醫學跨領域結合的照護模式。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】台灣老年醫學暨老年學會雜誌</span>
+                            <span class="text-xs text-slate-500 block mt-1">Geriatric Innovative Integration</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】將創新科技、在地資源與老年醫學跨領域結合的照護模式。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.tagg.org.tw/show_magazine.aspx?getId=32DBAC93EC6DFB01" target="_blank" class="text-blue-500 hover:underline">台灣老年醫學暨老年學會雜誌</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">自主與自立</span>
                             <span class="text-xs text-gray-500 block mt-1">Autonomy and Independence</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】透過科技輔助（如自立支援照顧、智慧科技維持生活機能），減少高齡者對他人的依賴，達成健康老化。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】透過科技輔助（如自立支援照顧、智慧科技維持生活機能），減少高齡者對他人的依賴，達成健康老化。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
                         </div>
                         <div class="bg-white border border-blue-100 p-4 rounded-xl shadow-sm">
                             <span class="font-bold text-blue-700 block text-base">高齡友善環境</span>
                             <span class="text-xs text-gray-500 block mt-1">Age-Friendly Environment</span>
-                            <p class="text-xs text-gray-600 mt-2">【說明】結合硬體建設與數位科技，建構適合長者安全通行、居住與互動的空間。</p>
-                            <span class="text-xs text-gray-400 block mt-1">【來源】超高齡社會政策專刊(11412)</span>
+                            <p class="text-xs text-slate-600 mt-2">【說明】結合硬體建設與數位科技，建構適合長者安全通行、居住與互動的空間。</p>
+                            <span class="text-xs text-slate-400 block mt-1">【來源】<a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-500 hover:underline">超高齡社會政策專刊(112)</a></span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-sciencefair" class="page-content">
+            <section class="py-16 container mx-auto px-6 max-w-5xl">
+                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-slate-800">🏆 科展競賽與研究素養指南</h2>
+                <p class="text-slate-600 mb-10 leading-relaxed max-w-3xl">科學展覽不僅是展現創意的舞台，更是嚴謹學術邏輯的淬鍊。我們為青年研究者梳理了參賽關鍵規範、核心檢索素養與不容妥協的學術倫理規範。</p>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-950 mb-6 flex items-center gap-2">
+                        <span>📌 臺灣重要科展規範與流程</span>
+                    </h3>
+                    <div class="grid md:grid-cols-2 gap-8 mb-6">
+                        <div class="space-y-3 text-sm">
+                            <h4 class="font-bold text-blue-600 text-base">👥 參賽與組隊限制</h4>
+                            <p><span class="font-semibold text-slate-800">● 中華民國中小學科學展覽會（全國科展）：</span> 每隊限報名學生 1 至 3 人（不得跨校），指導教師 1 至 2 人（需為同校編制內現職教師）。</p>
+                            <p><span class="font-semibold text-slate-800">● 臺灣國際科學展覽會（TISF）：</span> 每隊學生 1 至 2 人（允許跨校，需指定主要就讀學校）。</p>
+                        </div>
+                        <div class="space-y-3 text-sm">
+                            <h4 class="font-bold text-blue-600 text-base">🔬 與「高齡科技」高度相關學科</h4>
+                            <p><span class="font-semibold text-slate-800">● 電腦與資訊科學科：</span> 適合研究 AI 跌倒偵測、長者遠距監控 APP 與行為模式演算法。</p>
+                            <p><span class="font-semibold text-slate-800">● 工程學科：</span> 適合開發穿戴式智慧輔具、物聯網藥盒、智慧防摔裝置硬體改良。</p>
+                            <p><span class="font-semibold text-slate-800">● 醫學與健康科學 / 行為社會科學科：</span> 適合健康大數據分析，或研究科技介入照護對長者心理與社會韌性的變革評估。</p>
+                        </div>
+                    </div>
+                    <div class="bg-blue-50/50 rounded-xl p-5 border border-blue-100 text-sm">
+                        <h4 class="font-bold text-blue-700 mb-2">⚠️ 關鍵安全審查規範（人體受試保護）</h4>
+                        <p class="text-slate-600 leading-relaxed text-xs">
+                            科展對人體與生物實驗有極嚴格限制。若您的研究涉及人類行為（如高齡者操作介面測試、心理問卷等），必須確保<span class="font-semibold text-red-600">不具醫療危險性</span>，且研究前必須由所有參與長者或其法定代理人簽署<span class="font-semibold text-blue-600">「受試者同意書」</span>。作品說明書中禁止出現任何受試者的真實姓名與隱私照片。
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8 mb-8">
+                    <h3 class="text-2xl font-bold text-indigo-950 mb-6">📚 必備核心研究素養</h3>
+                    <div class="grid md:grid-cols-3 gap-6 text-sm">
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-1">🎯 問題意識與痛點</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">避免閉門造車。智慧高齡科技必須從「同理長者生活痛點」出發，並將廣泛議題限縮至「可操作的變因」，切忌題目流於過大而空泛。</p>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-1">🔍 圖書資訊檢索能力</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">在進行實驗前必須實施「文獻探討」，確認前人研究基礎，避免重複發明。應善用 PubMed（生醫）、IEEE Xplore（工程）、華藝等具同行評審之權威平台。</p>
+                        </div>
+                        <div class="p-5 bg-slate-50 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-slate-800 mb-2 flex items-center gap-1">⚖️ 科學誠實性與過程</h4>
+                            <p class="text-slate-600 text-xs leading-relaxed">禁止杜撰、編造虛假數據或實驗結果。所有的系統架構、程式碼核心邏輯、計算公式（如演算法準確度）皆需提供完整的思考與推導過程。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8">
+                    <h3 class="text-2xl font-bold text-indigo-950 mb-4 flex items-center gap-2">
+                        <span>⚖️ 學術倫理與引註規範 (APA 7th)</span>
+                    </h3>
+                    <p class="text-sm text-slate-600 mb-6">凡引用他人數據、觀點、圖表或句子，皆須明確標示出處。若無引註即構成學術抄襲，將會被取消科展或小論文參賽資格。以下提供醫學與資管界最常用的 **APA 第七版** 引用格式範例：</p>
+                    
+                    <div class="space-y-4 text-xs">
+                        <div class="p-4 bg-slate-50 border-l-4 border-blue-600 rounded-r-lg">
+                            <span class="font-bold text-slate-800 block mb-1">【期刊論文格式】作者（年代）。文章名稱。期刊名稱，卷（期），頁碼。DOI 或網址</span>
+                            <p class="text-slate-500 font-mono mt-1">● 英文範例：Smith, J. A., & Jones, M. B. (2024). Assistive robotic systems in smart elderly care. Gerontechnology, 23(1), 45–52. https://doi.org/10.4017/gt.2024.23.1.004</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 border-l-4 border-blue-600 rounded-r-lg">
+                            <span class="font-bold text-slate-800 block mb-1">【政府報告格式】發布機關（年代）。報告或書名。取自網址</span>
+                            <p class="text-slate-500 font-mono mt-1">● 範例：國家發展委員會（2023）。超高齡社會政策專刊。取自 https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D</p>
+                        </div>
+
+                        <div class="p-4 bg-slate-50 border-l-4 border-blue-600 rounded-r-lg">
+                            <span class="font-bold text-slate-800 block mb-1">【網頁資料格式】作者/組織名稱（年，月日）。網頁標題。網站名稱。網址</span>
+                            <p class="text-slate-500 font-mono mt-1">● 範例：衛生福利部社會及家庭署（2025，10月1日）。長照2.0智慧照顧推動計畫說明。取自 https://www.sfaa.gov.tw/</p>
                         </div>
                     </div>
                 </div>
@@ -368,10 +344,10 @@
 
         <div id="page-resources" class="page-content">
             <section class="py-16 container mx-auto px-6">
-                <h2 class="text-3xl font-bold mb-4 text-gray-800">各類型文獻參考</h2>
-                <p class="text-gray-600 mb-8">撰寫小論文與科展背景必備！我們為你整理了國內外最權威的學術期刊與官方管道，點擊藍色資源名稱即可直接前往文獻資料庫。</p>
+                <h2 class="text-3xl font-bold mb-4 text-slate-800">各類型文獻參考</h2>
+                <p class="text-slate-600 mb-8">撰寫小論文與科展背景必備！我們為你整理了國內外最權威的學術期刊與官方管道，點擊藍色資源名稱即可直接前往文獻資料庫。</p>
                 
-                <div class="bg-white rounded-xl shadow-md border border-gray-100 overflow-hidden">
+                <div class="bg-white rounded-xl shadow-md border border-slate-100 overflow-hidden">
                     <div class="overflow-x-auto">
                         <table class="w-full text-left w-max-full">
                             <thead class="bg-blue-600 text-white">
@@ -381,100 +357,100 @@
                                     <th class="py-4 px-6 text-sm font-semibold uppercase tracking-wider">高中生論文引註特色說明</th>
                                 </tr>
                             </thead>
-                            <tbody class="divide-y divide-gray-200 text-gray-600 text-sm">
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">中文核心期刊<br><span class="text-xs text-gray-400">(醫學／老人學)</span></td>
+                            <tbody class="divide-y divide-gray-200 text-slate-600 text-sm">
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">中文核心期刊<br><span class="text-xs text-slate-400">(醫學／老人學)</span></td>
                                     <td class="py-4 px-6 font-semibold">
-                                        <a href="https://www.tagg.org.tw/magazine4.aspx?page=1" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《台灣老年醫學暨老年學會雜誌》</a>
+                                        <a href="https://www.tagg.org.tw/show_magazine.aspx?getId=32DBAC93EC6DFB01" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《台灣老年醫學暨老年學會雜誌》</a>
                                     </td>
                                     <td class="py-4 px-6">由台灣老年學暨老年醫學會發行的學術期刊，主要探討老人醫學、長期照護、高齡健康與高齡化社會相關議題，為台灣重要的老年醫學研究期刊之一。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">中文核心期刊<br><span class="text-xs text-gray-400">(資訊／工程)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">中文核心期刊<br><span class="text-xs text-slate-400">(資訊／工程)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://journal.gerontechnology.org.tw/" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《福祉科技與服務管理學刊》</a>
                                     </td>
                                     <td class="py-4 px-6">主要探討高齡化社會中的福祉科技、智慧照護、長期照護與服務管理等議題，內容涵蓋智慧醫療、輔具科技、高齡生活與健康照護等研究，是高齡科技領域的重要中文期刊之一。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(綜合高齡科技)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(綜合高齡科技)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.gerontechnology.org" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">Gerontechnology</a>
                                     </td>
                                     <td class="py-4 px-6 text-amber-600 font-medium">★ 高齡科技領域唯一專屬國際期刊，雖然索引進度不一，但為該跨學科研究的學術起點指標，非常適合用作研究的理論定義與背景發展佐證。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(醫學／老人學)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(醫學／老人學)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://academic.oup.com/gerontologist" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">The Gerontologist</a>
                                     </td>
                                     <td class="py-4 px-6">社會老人學頂尖期刊，專門探討科技介入對傳統照護模式帶來的影響、社會福利評估以及照護者壓力的心理與社會機制的實證研究。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(醫學／老人學)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(醫學／老人學)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://aging.jmir.org" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">JMIR Aging</a>
                                     </td>
                                     <td class="py-4 px-6">專注於數位醫療（Digital Health）與高齡科技應用，包含大量網際網路行動通訊、穿戴裝置、遠距健康在長者群體中的行為模型與成效分析。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(資訊／工程)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(資訊／工程)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">IEEE J-BHI</a>
                                     </td>
                                     <td class="py-4 px-6">（IEEE Journal of Biomedical and Health Informatics）側重於穿戴裝置、生醫感測器整合、健康大數據分析與生物醫學資訊學的硬體與軟體演算法研究。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(資訊／工程)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(資訊／工程)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.mdpi.com/journal/sensors" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">Sensors</a>
                                     </td>
                                     <td class="py-4 px-6">包含大量與長者安全息息相關的物聯網技術論文，如跌倒偵測演算法、居家環境感控、室內微波雷達行為定位檢測等技術實作研究。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-gray-400">(社會／環境)</span></td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">英文核心期刊<br><span class="text-xs text-slate-400">(社會／環境)</span></td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.tandfonline.com" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">Journal of Aging and Environment</a>
                                     </td>
                                     <td class="py-4 px-6">專門探討實體（如無障礙空間、社區硬體）與數位環境（如智慧家居、高齡友善介面設計）對在地老化與健康老化的深遠影響。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">政府官網資源</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">政府官網資源</td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.sfaa.gov.tw/" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">衛生福利部 社會及家庭署</a>
                                     </td>
                                     <td class="py-4 px-6">提供台灣長照 2.0 政策法規、高齡生活支持與官方社會福利政策的第一手重要官方依據。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">政府官網資源</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">政府官網資源</td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.ndc.gov.tw/Default.aspx" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">國家發展委員會</a>
                                     </td>
                                     <td class="py-4 px-6">提供台灣人口老化趨勢、統計數據與未來預測，可作為分析高齡化社會發展與科技需求的重要依據。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">政府官網資源</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">政府官網資源</td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.president.gov.tw/Page/718" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">健康台灣推動委員會</a>
                                     </td>
                                     <td class="py-4 px-6">介紹政府推動「健康台灣」政策的整體方向，涵蓋健康促進、智慧醫療與高齡照護等議題，強調透過科技與跨部會合作提升全民健康與高齡者生活品質，對於了解高齡科技與健康政策的整合具有參考價值。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">政府出版品</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">政府出版品</td>
                                     <td class="py-4 px-6 font-semibold">
-                                        <a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《超高齡社會政策專刊》</a>
+                                        <a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《超高齡社會政策專刊》</a>
                                     </td>
                                     <td class="py-4 px-6">提供《超高齡社會政策專刊》完整內容與政策背景，涵蓋人口老化、勞動力、經濟安全及高齡科技等議題，有助於了解台灣面對高齡化社會的整體發展方向與政策規劃。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">政府出版品</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">政府出版品</td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.sfaa.gov.tw/SFAA/Pages/Detail.aspx?nodeid=1411&pid=11909" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">《因應超高齡社會對策方案（112–115年）》</a>
                                     </td>
                                     <td class="py-4 px-6">針對台灣即將進入超高齡社會所提出的整體政策規劃，涵蓋健康促進、長期照顧、數位科技應用與高齡友善環境等面向，強調透過智慧醫療與科技輔助提升高齡者生活品質，對於探討高齡科技發展具有重要參考價值。</td>
                                 </tr>
-                                <tr class="hover:bg-gray-50 transition-colors">
-                                    <td class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">新聞／媒體資料</td>
+                                <tr class="hover:bg-slate-50 transition-colors">
+                                    <td class="py-4 px-6 font-medium text-slate-900 whitespace-nowrap">新聞／媒體資料</td>
                                     <td class="py-4 px-6 font-semibold">
                                         <a href="https://www.cw.com.tw/tag/%E6%99%BA%E6%85%A7%E9%86%AB%E7%99%82?utm_source=chatgpt.com" target="_blank" class="text-blue-600 hover:underline hover:text-blue-800">天下雜誌</a>
                                     </td>
@@ -489,23 +465,23 @@
         
         <div id="page-faq" class="page-content">
             <section class="py-16 container mx-auto px-6 max-w-5xl">
-                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-gray-800">❓ 常見問題 FAQ</h2>
-                <p class="text-gray-600 mb-10 leading-relaxed">整理高中生在進行智慧醫療與高齡科技科展、小論文研究時最常遇到的問題，協助快速了解研究方向與資料查詢方法。</p>
+                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-slate-800">❓ 常見問題 FAQ</h2>
+                <p class="text-slate-600 mb-10 leading-relaxed">整理高中生在進行智慧醫療與高齡科技科展、小論文研究時最常遇到的問題，協助快速了解研究方向與資料查詢方法。</p>
 
                 <div class="space-y-6">
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">1. 什麼是智慧醫療？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">智慧醫療是結合人工智慧（AI）、大數據、物聯網與雲端科技的醫療模式，能提升醫療效率、健康監測與遠距照護品質。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">智慧醫療是結合人工智慧（AI）、大數據、物聯網與雲端科技的醫療模式，能提升醫療效率、健康監測與遠距照護品質。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">2. 高齡化社會為什麼需要智慧醫療？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">隨著高齡人口增加，醫療與照護需求提高，智慧醫療能減少醫療負擔，提升長者生活品質與照護效率。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">隨著高齡人口增加，醫療與照護需求提高，智慧醫療能減少醫療負擔，提升長者生活品質與照護效率。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">3. 智慧醫療有哪些常見應用？</h3>
-                        <ul class="list-disc list-inside text-gray-600 text-sm leading-relaxed space-y-1">
+                        <ul class="list-disc list-inside text-slate-600 text-sm leading-relaxed space-y-1">
                             <li>遠距醫療</li>
                             <li>AI 醫學影像辨識</li>
                             <li>穿戴式健康裝置</li>
@@ -514,39 +490,39 @@
                         </ul>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">4. 高中生可以研究哪些主題？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">可從長者生活需求出發，例如：跌倒偵測、智慧藥盒、健康監測、AI 照護系統、高齡友善介面設計等方向。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">可從長者生活需求出發，例如：跌倒偵測、智慧藥盒、健康監測、AI 照護系統、高齡友善介面設計等方向。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">5. 哪裡可以查詢智慧醫療文獻？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">可利用 PubMed、Google Scholar、IEEE Xplore、華藝線上圖書館與台灣期刊論文索引系統查詢相關研究。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">可利用 PubMed、Google Scholar、IEEE Xplore、華藝線上圖書館與台灣期刊論文索引系統查詢相關研究。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">6. 如何判斷資料是否可信？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">建議優先選擇學術期刊、政府網站與專業研究機構資料，避免引用來源不明或未經驗證的內容。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">建議優先選擇學術期刊、政府網站與專業研究機構資料，避免引用來源不明或未經驗證的內容。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">7. AI 在高齡照護中的應用有哪些？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">包含跌倒偵測、健康監測、語音助理、照護機器人、AI 醫學影像分析與個人化健康管理等。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">包含跌倒偵測、健康監測、語音助理、照護機器人、AI 醫學影像分析與個人化健康管理等。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">8. 小論文一定要引用文獻嗎？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">需要。引用文獻能增加研究可信度，並避免抄襲問題，是學術研究的重要部分。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">需要。引用文獻能增加研究可信度，並避免抄襲問題，是學術研究的重要部分。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">9. APA 格式是什麼？</h3>
                         <p class="text-gray-600 leading-relaxed text-sm">APA 是常見的學術引用格式，用於標示資料來源與參考文獻，常見於醫學與社會科學研究。</p>
                     </div>
 
-                    <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+                    <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-6">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">10. 如何找到適合的科展主題？</h3>
-                        <p class="text-gray-600 leading-relaxed text-sm">可從生活問題、長者需求或醫療科技發展出發，觀察實際痛點並思考科技如何改善生活。</p>
+                        <p class="text-slate-600 leading-relaxed text-sm">可從生活問題、長者需求或醫療科技發展出發，觀察實際痛點並思考科技如何改善生活。</p>
                     </div>
                 </div>
             </section>
@@ -554,79 +530,164 @@
 
         <div id="page-about" class="page-content">
             <section class="py-16 container mx-auto px-6 max-w-4xl">
-                <h2 class="text-3xl font-bold mb-4 text-gray-800">關於 SilverTech 團隊</h2>
-                <p class="text-gray-600 mb-10">我們是一群深耕高齡科技（Gerontechnology）與數位資訊素養的學術與圖書資訊專家，旨在為中學生提供客觀、嚴謹且溫暖的科學探究支援體系。</p>
+                <h2 class="text-3xl font-bold mb-4 text-slate-800">關於 SilverTech 團隊</h2>
+                <p class="text-slate-600 mb-10">我們是一群深耕高齡科技（Gerontechnology）與數位資訊素養的學術與圖書資訊專家，旨在為中學生提供客觀、嚴謹且溫暖的科學探究支援體系。</p>
                 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">🎯 我們的使命</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">因應台灣邁入超高齡社會，我們期盼透過教育宣導，激發高中生對長者需求的同理心，並運用科學方法提出永續的科技解決方案。</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">因應台灣邁入超高齡社會，我們期盼透過教育宣導，激發高中生對長者需求的同理心，並運用科學方法提出永續的科技解決方案。</p>
                     </div>
-                    <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
                         <h3 class="text-lg font-bold text-blue-600 mb-3">🛠️ 專業諮詢範圍</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">科展主題可行性評估、APA 文獻引註規範指導、國內外醫學與資管核心期刊資料庫檢索教學。</p>
+                        <p class="text-sm text-slate-600 leading-relaxed">科展主題可行性評估、APA 文獻引註規範指導、國內外醫學與資管核心期刊資料庫檢索教學。</p>
                     </div>
                 </div>
 
-                <div class="bg-blue-50 rounded-2xl p-8 border border-blue-100">
+                <div class="bg-blue-50 border border-blue-100 rounded-2xl p-8">
                     <h3 class="text-xl font-bold text-blue-900 mb-4">📬 聯絡諮詢團隊</h3>
-                    <p class="text-gray-700 text-sm mb-6">歡迎各級學校、科展指導老師 or 同學個人來信洽詢合作或預約專家線上諮詢：</p>
-                    <ul class="space-y-3 text-sm text-gray-600">
-                        <li class="flex items-center gap-2">
-                            <span class="font-bold text-blue-800">電子郵件：</span> contact@silvertech.edu.tw
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="font-bold text-blue-800">服務時間：</span> 週一至週五 09:00 - 17:00
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <span class="font-bold text-blue-800">主辦企劃：</span> 2026 SilverTech 專題研究與青年科技教育推廣小組
-                        </li>
+                    <p class="text-slate-700 text-sm mb-6">歡迎各級學校、科展指導老師 or 同學個人來信洽詢合作或預約專家線上諮詢：</p>
+                    <ul class="space-y-3 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><span class="font-bold text-blue-800">電子郵件：</span> contact@silvertech.edu.tw</li>
+                        <li class="flex items-center gap-2"><span class="font-bold text-blue-800">服務時間：</span> 週一至週五 09:00 - 17:00</li>
+                        <li class="flex items-center gap-2"><span class="font-bold text-blue-800">主辦企劃：</span> 2026 SilverTech 專題研究與青年科技教育推廣小組</li>
                     </ul>
+                </div>
+            </section>
+        </div>
+
+        <div id="page-sitemap" class="page-content">
+            <section class="py-16 container mx-auto px-6 max-w-5xl">
+                <h2 class="text-3xl font-bold mb-4 border-l-8 border-blue-600 pl-4 text-slate-800">🗺️ 網站地圖 Site Map</h2>
+                <p class="text-slate-600 mb-12 leading-relaxed">為高中生與指導老師提供結構化的全站索引，一鍵直達特定議題、互動工具或關鍵文獻資料庫。</p>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <h3 class="text-lg font-bold text-blue-700 mb-4 pb-2 border-b border-slate-100">🧭 全站導覽</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li>
+                                <a href="#home" onclick="navigateTo('home')" class="text-slate-700 hover:text-blue-600 font-medium">首頁 (Home)</a>
+                                <ul class="pl-6 mt-1.5 space-y-1 text-xs text-slate-500 list-disc">
+                                    <li>平台介紹與目標群體指引</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#topics" onclick="navigateTo('topics')" class="text-slate-700 hover:text-blue-600 font-medium">核心議題探索 (Core Topics)</a>
+                                <ul class="pl-6 mt-1.5 space-y-1 text-xs text-slate-500 list-disc">
+                                    <li>三大高齡科技研究主題與關鍵詞索引典</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#sciencefair" onclick="navigateTo('sciencefair')" class="text-slate-700 hover:text-blue-600 font-medium">科展與研究素養 (Science Fair Guide)</a>
+                                <ul class="pl-6 mt-1.5 space-y-1 text-xs text-slate-500 list-disc">
+                                    <li>競賽規範、圖資素養、APA 7th 引註格式範例</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#resources" onclick="navigateTo('resources')" class="text-slate-700 hover:text-blue-600 font-medium">各類型文獻資源 (Academic Resources)</a>
+                            </li>
+                            <li>
+                                <a href="#faq" onclick="navigateTo('faq')" class="text-slate-700 hover:text-blue-600 font-medium">常見問題 FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#about" onclick="navigateTo('about')" class="text-slate-700 hover:text-blue-600 font-medium">關於諮詢團隊 (About us)</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+                        <h3 class="text-lg font-bold text-blue-700 mb-4 pb-2 border-b border-slate-100">🤖 高齡科技與研究領域</h3>
+                        <ul class="space-y-4 text-sm text-slate-700">
+                            <li>
+                                <span class="font-bold text-slate-800 block">1. 長照機器人的發展</span>
+                                <span class="text-xs text-slate-400 block">人力減輕 / 實體與數位老化環境</span>
+                            </li>
+                            <li>
+                                <span class="font-bold text-slate-800 block">2. 智慧醫療與遠距照護</span>
+                                <span class="text-xs text-slate-400 block">居家感控 / 三軸加速度計跌倒偵測</span>
+                            </li>
+                            <li>
+                                <span class="font-bold text-slate-800 block">3. 健康大數據與個人化醫療</span>
+                                <span class="text-xs text-slate-400 block">生醫資訊學 / 傳統照護變革評估</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100 md:col-span-2">
+                        <h3 class="text-lg font-bold text-blue-700 mb-4 pb-2 border-b border-gray-100">🔗 外部權威文獻資源快速通道</h3>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-3 text-xs text-blue-600">
+                            <a href="https://www.tagg.org.tw/show_magazine.aspx?getId=32DBAC93EC6DFB01" target="_blank" class="hover:underline">⊙ 《台灣老年醫學暨老年學會雜誌》(精選卷期)</a>
+                            <a href="https://journal.gerontechnology.org.tw/" target="_blank" class="hover:underline">⊙ 《福祉科技與服務管理學刊》</a>
+                            <a href="https://www.gerontechnology.org" target="_blank" class="hover:underline">⊙ Gerontechnology (國際期刊)</a>
+                            <a href="https://academic.oup.com/gerontologist" target="_blank" class="hover:underline">⊙ The Gerontologist (社會老人學頂尖期刊)</a>
+                            <a href="https://aging.jmir.org" target="_blank" class="hover:underline">⊙ JMIR Aging (數位醫療行為模型)</a>
+                            <a href="https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=6221020" target="_blank" class="hover:underline">⊙ IEEE J-BHI (穿戴裝置與生醫資訊)</a>
+                            <a href="https://www.mdpi.com/journal/sensors" target="_blank" class="hover:underline">⊙ Sensors (跌倒偵測專欄)</a>
+                            <a href="https://www.tandfonline.com" target="_blank" class="hover:underline">⊙ Journal of Aging and Environment</a>
+                            <a href="https://www.sfaa.gov.tw/" target="_blank" class="hover:underline">⊙ 衛生福利部 社會及家庭署 (長照2.0)</a>
+                            <a href="https://www.ndc.gov.tw/Default.aspx" target="_blank" class="hover:underline">⊙ 國家發展委員會 (人口趨勢)</a>
+                            <a href="https://www.president.gov.tw/Page/718" target="_blank" class="hover:underline">⊙ 健康台灣推動委員會</a>
+                            <a href="https://www.ndc.gov.tw/Content_List.aspx?n=E188C65F537D316D#" target="_blank" class="hover:underline">⊙ 《超高齡社會政策專刊》(112)</a>
+                            <a href="https://www.sfaa.gov.tw/SFAA/Pages/Detail.aspx?nodeid=1411&pid=11909" target="_blank" class="hover:underline">⊙ 《因應超高齡社會對策方案》</a>
+                        </div>
+                    </div>
+
+                    <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 md:col-span-2">
+                        <h3 class="text-sm font-bold text-blue-900 mb-3">🛠️ 科展研究動態工具快速連結</h3>
+                        <div class="flex flex-wrap gap-4 text-xs">
+                            <a href="#home" onclick="navigateTo('home')" class="bg-white border border-blue-200 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">⌛ 2026 全國科展截稿倒數器</a>
+                            <a href="#home" onclick="navigateTo('home')" class="bg-white border border-blue-200 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">🎨 醫療關懷主題海報配色建議</a>
+                            <a href="#home" onclick="navigateTo('home')" class="bg-white border border-blue-200 text-blue-700 px-3 py-1.5 rounded-lg hover:bg-blue-100 transition-colors">📅 線上館員諮詢時段預約</a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
 
     </main>
 
-    <footer class="bg-gray-800 text-gray-300 py-12 px-6 border-t border-gray-700">
-        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-gray-700 pb-8 mb-8 text-sm">
+    <footer class="bg-slate-800 text-slate-300 py-12 px-6 border-t border-slate-700">
+        <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 border-b border-slate-700 pb-8 mb-8 text-sm">
             <div>
                 <h4 class="font-bold text-white mb-4">首頁功能</h4>
-                <ul class="space-y-2 text-gray-400">
+                <ul class="space-y-2 text-slate-400">
                     <li><a href="#home" onclick="navigateTo('home')" class="hover:text-blue-400">科展介紹</a></li>
                     <li><a href="#home" onclick="navigateTo('home')" class="hover:text-blue-400">平台理念</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4">核心議題</h4>
-                <ul class="space-y-2 text-gray-400">
+                <ul class="space-y-2 text-slate-400">
                     <li><a href="#topics" onclick="navigateTo('topics')" class="hover:text-blue-400">長照機器人</a></li>
                     <li><a href="#topics" onclick="navigateTo('topics')" class="hover:text-blue-400">智慧醫療</a></li>
                 </ul>
             </div>
             <div>
-                <h4 class="font-bold text-white mb-4">學術資源</h4>
-                <ul class="space-y-2 text-gray-400">
-                    <li><a href="#resources" onclick="navigateTo('resources')" class="hover:text-blue-400">中英文期刊</a></li>
-                    <li><a href="#resources" onclick="navigateTo('resources')" class="hover:text-blue-400">政府出版品</a></li>
+                <h4 class="font-bold text-white mb-4">學術與競賽</h4>
+                <ul class="space-y-2 text-slate-400">
+                    <li><a href="#sciencefair" onclick="navigateTo('sciencefair')" class="hover:text-blue-400">科展大賽與研究素養</a></li>
+                    <li><a href="#resources" onclick="navigateTo('resources')" class="hover:text-blue-400">權威文獻資源庫</a></li>
+                    <li><a href="#sitemap" onclick="navigateTo('sitemap')" class="text-blue-400 hover:underline">🗺️ 網站地圖索引</a></li>
                 </ul>
             </div>
             <div>
                 <h4 class="font-bold text-white mb-4">聯絡管道</h4>
-                <p class="text-xs text-gray-400">Email: contact@silvertech.edu.tw</p>
-                <p class="text-xs text-gray-400 mt-1">專人於 48 小時內回覆</p>
+                <p class="text-xs text-slate-400">Email: contact@silvertech.edu.tw</p>
+                <p class="text-xs text-slate-400 mt-1">專人於 48 小時內回覆</p>
             </div>
         </div>
-        <p class="text-center text-xs text-gray-500">© 2026 SilverTech 企劃案 - 因應高齡化社會所發展之科技. All Rights Reserved.</p>
+        <p class="text-center text-xs text-slate-500">© 2026 SilverTech 企劃案 - 因應高齡化社會所發展之科技. All Rights Reserved.</p>
     </footer>
 
     <script>
         const pageNames = {
             'home': '首頁',
             'topics': '核心議題探索',
+            'sciencefair': '科展競賽與研究素養',
             'resources': '文獻資源參考',
             'faq': '常見問題 FAQ',
-            'about': '關於諮詢團隊'
+            'about': '關於諮詢團隊',
+            'sitemap': '網站地圖'
         };
 
         const targetDate = new Date('July 1, 2026 00:00:00').getTime();
@@ -650,7 +711,7 @@
                 const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
                 const seconds = Math.floor((difference % (1000 * 60)) / 1000);
 
-                displayEl.innerHTML = `${days}日 ${hours}時 ${minutes}分 <span class="text-sm text-gray-300 ml-1 font-sans">${seconds}秒</span>`;
+                displayEl.innerHTML = `${days}日 ${hours}時 ${minutes}分 <span class="text-sm text-slate-300 ml-1 font-sans">${seconds}秒</span>`;
             }
 
             updateTimer();
@@ -668,13 +729,13 @@
 
             document.querySelectorAll('.nav-link').forEach(link => {
                 link.classList.remove('text-blue-600', 'font-bold');
-                link.classList.add('text-gray-600');
+                link.classList.add('text-slate-600');
             });
             
             const activeLinks = document.querySelectorAll(`a[href="#${pageId}"]`);
             activeLinks.forEach(link => {
                 if(link.classList.contains('nav-link')) {
-                    link.classList.remove('text-gray-600');
+                    link.classList.remove('text-slate-600');
                     link.classList.add('text-blue-600', 'font-bold');
                 }
             });
@@ -684,8 +745,8 @@
                 breadcrumbContainer.innerHTML = `<span>首頁</span>`;
             } else {
                 breadcrumbContainer.innerHTML = `
-                    <a href="#home" onclick="navigateTo('home')" class="text-gray-600 hover:text-blue-600">首頁</a> 
-                    <span class="mx-2 text-gray-400">/</span> 
+                    <a href="#home" onclick="navigateTo('home')" class="text-slate-600 hover:text-blue-600">首頁</a> 
+                    <span class="mx-2 text-slate-400">/</span> 
                     <span class="text-blue-600 font-medium">${pageNames[pageId]}</span>
                 `;
             }
@@ -705,3 +766,4 @@
         });
     </script>
 </body>
+</html>
